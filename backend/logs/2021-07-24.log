@@ -659,3 +659,100 @@
 2021-07-24T15:00:49.965Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
 2021-07-24T15:00:50.107Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
 2021-07-24T15:00:50.133Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:03:07.800Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:03:10.421Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:08:30.883Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:08:42.428Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:09:29.182Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:09:40.629Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:09:42.128Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:10:30.689Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:10:32.065Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:10:32.229Z [31merror[39m: 	Uncaught Exception AssertionError: expected 2 to equal 0
+2021-07-24T15:10:32.308Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:10:32.337Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.355Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.369Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.414Z [31merror[39m: 	[post/todo]Error occured while saving the record
+2021-07-24T15:10:32.418Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.429Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-24T15:10:32.433Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.452Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:10:32.455Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.464Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:10:32.469Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.478Z [31merror[39m: 	[delete/todo] Error occured while deleting all the records
+2021-07-24T15:10:32.481Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:32.999Z [31merror[39m: 	Uncaught Exception Error: done() called multiple times in test <api/users should connect and disconnect to mongodb> of file D:\GitHub\Node JS\assigment-code-20210707\todo\backend\test\todo.js
+2021-07-24T15:10:40.512Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:10:42.027Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:10:42.197Z [31merror[39m: 	Uncaught Exception AssertionError: expected 2 to equal 0
+2021-07-24T15:10:42.247Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:10:42.258Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.300Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.318Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.367Z [31merror[39m: 	[post/todo]Error occured while saving the record
+2021-07-24T15:10:42.371Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.381Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-24T15:10:42.384Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.401Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:10:42.404Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.416Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:10:42.419Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:42.430Z [31merror[39m: 	[delete/todo] Error occured while deleting all the records
+2021-07-24T15:10:42.434Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:10:43.029Z [31merror[39m: 	Uncaught Exception Error: done() called multiple times in test <api/users should connect and disconnect to mongodb> of file D:\GitHub\Node JS\assigment-code-20210707\todo\backend\test\todo.js
+2021-07-24T15:11:20.217Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:11:21.905Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:11:22.043Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:22.186Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:22.324Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:22.539Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:22.680Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:22.844Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:11:22.850Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:22.995Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:11:23.005Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:23.159Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:31.583Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:11:33.037Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:11:33.207Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:33.369Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:33.531Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:33.762Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:33.920Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:34.107Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:11:34.115Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:34.277Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:11:34.285Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:34.480Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:52.966Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:11:54.430Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:11:54.605Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:54.766Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:54.927Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:55.161Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:55.337Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:55.526Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:11:55.534Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:55.700Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:11:55.707Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:11:55.914Z [31merror[39m: 	Uncaught Exception TypeError: Cannot read property 'have' of undefined
+2021-07-24T15:12:49.281Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:12:59.360Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:12:59.402Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:13:08.387Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:13:09.779Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:13:10.839Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:13:10.877Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:13:11.028Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:13:11.052Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:13:19.911Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:13:30.009Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:13:30.064Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:13:40.004Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:13:41.395Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:13:42.417Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:13:42.455Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:13:42.610Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:13:42.638Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404

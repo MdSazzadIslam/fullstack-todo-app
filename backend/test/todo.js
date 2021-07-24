@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const chai = require("chai");
 const chaiHttp = require("chai-http");
 const expect = chai.expect;
@@ -12,6 +11,7 @@ const id = "60fc2740c40de5429c66aa62";
 /*
  * Test the /GET route
  */
+
 describe("/GET todos", () => {
   it("It should GET all the todo records", (done) => {
     chai
