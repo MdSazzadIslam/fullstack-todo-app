@@ -11,7 +11,7 @@ const getTodos = (req, res) => {
   }
 
   Todo.find({})
-    .sort({ userId: "asc" })
+    .sort({ createdAt: "desc" })
     .limit(Number(limit))
     .exec()
     .then((data) => {
@@ -130,21 +130,20 @@ const updateTodo = (req, res) => {
 
 const deleteTodo = (req, res) => {
   const { id } = req.params;
+
   if (typeof id !== "string") {
     logger.error("[delete/:id] invalid 'text' expected string");
     return res.status(400).send({ message: "invalid 'text' expected string" });
   }
 
-  Todo.findByIdAndDelete(req.params.id)
+  Todo.findByIdAndDelete(id)
     .then((data) => {
       if (!data) {
-        logger.error(
-          `[delete/:id] Can not delete the record with id ${req.params.id}`
-        );
+        logger.error(`[delete/:id] Can not delete the record with id ${id}`);
 
         res.status(404).json({
           status: "false",
-          message: `Can not delete the record with id ${req.params.id}`,
+          message: `Can not delete the record with id ${id}`,
         });
       } else {
         res
@@ -154,12 +153,12 @@ const deleteTodo = (req, res) => {
     })
     .catch((err) => {
       logger.error(
-        `[delete/:id] Error occured while deleting the record with id ${req.params.id}`
+        `[delete/:id] Error occured while deleting the record with id ${id}`
       );
       res.status(500).json({
         status: "false",
         message:
-          `Error occured while deleting the record with id ${req.params.id} ` +
+          `Error occured while deleting the record with id ${id} ` +
           err.message,
       });
     });
@@ -188,6 +187,7 @@ const deleteTodos = (req, res) => {
 
 const pendingTodos = (req, res) => {
   Todo.find({ completed: false })
+    .sort({ createdAt: "desc" })
     .then((data) => {
       res.status(200).json(data);
     })
@@ -203,6 +203,7 @@ const pendingTodos = (req, res) => {
 
 const completedTodos = (req, res) => {
   Todo.find({ completed: true })
+    .sort({ createdAt: "desc" })
     .then((data) => {
       res.status(200).json(data);
     })

@@ -1,0 +1,27 @@
+2021-07-24T19:50:12.655Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id undefined
+2021-07-24T19:50:21.681Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id undefined
+2021-07-24T19:52:13.843Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id undefined
+2021-07-24T19:53:08.901Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id undefined
+2021-07-24T19:53:09.631Z [31merror[39m: 	[delete/:id] Error occured while deleting the record with id undefined
+2021-07-24T19:54:06.815Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc40632bffbf2ca8656de3
+2021-07-24T19:57:01.775Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T19:57:05.299Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T19:58:17.948Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc33a692cd882db00ea8d4
+2021-07-24T19:59:52.628Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T19:59:54.150Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:04:55.884Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:04:57.417Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:07:57.000Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:08:00.188Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:20:41.365Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:20:43.766Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:21:10.582Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:21:12.030Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:23:00.937Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:23:02.442Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:23:11.870Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:23:13.170Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:30:55.259Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:31:18.170Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T21:31:39.646Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T21:31:41.014Z [32minfo[39m: 	Successfully connected to database

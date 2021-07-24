@@ -5,9 +5,7 @@ const connectDB = require("./src/config/db");
 const logger = require("./src/helpers/logger");
 
 async function main() {
-  (() => {
-    connectDB(process.env.MONGO_URI);
-  })();
+  await connectDB(process.env.MONGO_URI);
 
   process.on("uncaughtException", (err) => {
     logger.error(`Uncaught Exception ${err}`);
