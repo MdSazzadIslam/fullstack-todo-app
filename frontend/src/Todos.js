@@ -9,7 +9,10 @@ import {
   Box,
   TextField,
   Checkbox,
+  CircularProgress,
 } from "@material-ui/core";
+import todoService from "./services/todoService";
+import List from "./components/List";
 
 const useStyles = makeStyles({
   addTodoContainer: { padding: 10 },
@@ -38,28 +41,41 @@ const useStyles = makeStyles({
 
 function Todos() {
   const classes = useStyles();
+
   const [todos, setTodos] = useState([]);
   const [newTodoText, setNewTodoText] = useState("");
+  const [newDueDate, setNewDueDate] = useState("");
+
+  const fetchTodos = async () => {
+    await todoService.getTodos().then((todos) => setTodos(todos));
+  };
 
   useEffect(() => {
-    fetch("http://localhost:3001/")
-      .then((response) => response.json())
-      .then((todos) => setTodos(todos));
+    fetchTodos();
   }, [setTodos]);
 
-  function addTodo(text) {
-    fetch("http://localhost:3001/", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-      body: JSON.stringify({ text }),
-    })
-      .then((response) => response.json())
-      .then((todo) => setTodos([...todos, todo]));
-    setNewTodoText("");
-  }
+  const addTodo = async (event) => {
+    event.preventDefault();
+    console.log(newDueDate.length);
+    if (!newTodoText.trim()) {
+      alert("Please enter todo ");
+      return;
+    } else if (newDueDate.length < 8) {
+      alert("Please enter due date ");
+      return;
+    } else {
+      const data = {
+        text: newTodoText,
+        dueDate: newDueDate,
+      };
+      await todoService
+        .createTodo(data)
+        .then(async (todo) => await fetchTodos())
+        .catch((err) => console.log(err));
+      setNewTodoText("");
+      setNewDueDate("");
+    }
+  };
 
   function toggleTodoCompleted(id) {
     fetch(`http://localhost:3001/${id}`, {
@@ -82,11 +98,23 @@ function Todos() {
     });
   }
 
-  function deleteTodo(id) {
-    fetch(`http://localhost:3001/${id}`, {
-      method: "DELETE",
-    }).then(() => setTodos(todos.filter((todo) => todo.id !== id)));
-  }
+  const deleteTodoHandler = async (id) => {
+    await todoService
+      .deleteTodo(id)
+      .then(async (res) => {
+        console.log(res);
+        await fetchTodos();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const handleKeyPress = async (event) => {
+    if (event.key === "Enter") {
+      await addTodo();
+    }
+  };
 
   return (
     <Container maxWidth="md">
@@ -98,58 +126,51 @@ function Todos() {
           <Box flexGrow={1}>
             <TextField
               fullWidth
+              placeholder="Write your todo here..."
+              name="newTodoText"
+              autoFocus
               value={newTodoText}
-              onKeyPress={(event) => {
-                if (event.key === "Enter") {
-                  addTodo(newTodoText);
-                }
-              }}
               onChange={(event) => setNewTodoText(event.target.value)}
             />
+
+            <TextField
+              fullWidth
+              placeholder="Write your due date here..."
+              name="newDueDate"
+              type="date"
+              value={newDueDate}
+              onKeyPress={(event) => {
+                handleKeyPress(event);
+              }}
+              onChange={(event) => setNewDueDate(event.target.value)}
+            />
           </Box>
-          <Button
-            className={classes.addTodoButton}
-            startIcon={<Icon>add</Icon>}
-            onClick={() => addTodo(newTodoText)}
-          >
-            Add
-          </Button>
+          {newTodoText.length > 0 && newDueDate.length > 8 ? (
+            <Button
+              className={classes.addTodoButton}
+              startIcon={<Icon>add</Icon>}
+              onClick={(event) => addTodo(event)}
+            >
+              Add
+            </Button>
+          ) : null}
         </Box>
       </Paper>
-      {todos.length > 0 && (
+      {todos.length > 0 ? (
         <Paper className={classes.todosContainer}>
           <Box display="flex" flexDirection="column" alignItems="stretch">
-            {todos.map(({ id, text, completed }) => (
-              <Box
-                key={id}
-                display="flex"
-                flexDirection="row"
-                alignItems="center"
-                className={classes.todoContainer}
-              >
-                <Checkbox
-                  checked={completed}
-                  onChange={() => toggleTodoCompleted(id)}
-                ></Checkbox>
-                <Box flexGrow={1}>
-                  <Typography
-                    className={completed ? classes.todoTextCompleted : ""}
-                    variant="body1"
-                  >
-                    {text}
-                  </Typography>
-                </Box>
-                <Button
-                  className={classes.deleteTodo}
-                  startIcon={<Icon>delete</Icon>}
-                  onClick={() => deleteTodo(id)}
-                >
-                  Delete
-                </Button>
-              </Box>
-            ))}
+            <List
+              todos={todos}
+              todoContainer={classes.todoContainer}
+              todoTextCompleted={classes.todoTextCompleted}
+              deleteTodoClass={classes.deleteTodo}
+              toggleTodoCompleted={(id) => toggleTodoCompleted(id)}
+              deleteTodoHandler={(id) => deleteTodoHandler(id)}
+            />
           </Box>
         </Paper>
+      ) : (
+        <CircularProgress />
       )}
     </Container>
   );
