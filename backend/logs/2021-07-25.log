@@ -25,3 +25,27 @@
 2021-07-24T21:31:18.170Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
 2021-07-24T21:31:39.646Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
 2021-07-24T21:31:41.014Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:33:02.788Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:33:04.308Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:56:50.866Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:56:52.943Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T21:59:14.855Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T21:59:27.247Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:00:02.935Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:00:04.203Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:01:08.915Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:01:20.892Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:03:48.998Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:03:50.979Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:07:16.704Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:07:19.168Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:10:19.311Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:10:21.271Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:12:59.783Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:13:12.100Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:17:22.489Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:17:44.470Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:17:45.836Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T22:21:03.117Z [31merror[39m: 	Middleware[create/update]
+2021-07-24T22:26:09.221Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T22:26:21.507Z [32minfo[39m: 	Successfully connected to database

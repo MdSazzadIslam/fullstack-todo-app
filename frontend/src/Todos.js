@@ -8,7 +8,6 @@ import {
   Paper,
   Box,
   TextField,
-  Checkbox,
   CircularProgress,
 } from "@material-ui/core";
 import todoService from "./services/todoService";
@@ -58,10 +57,8 @@ function Todos() {
     event.preventDefault();
     console.log(newDueDate.length);
     if (!newTodoText.trim()) {
-      alert("Please enter todo ");
       return;
     } else if (newDueDate.length < 8) {
-      alert("Please enter due date ");
       return;
     } else {
       const data = {
@@ -70,33 +67,27 @@ function Todos() {
       };
       await todoService
         .createTodo(data)
-        .then(async (todo) => await fetchTodos())
+        .then(async () => await fetchTodos())
         .catch((err) => console.log(err));
       setNewTodoText("");
       setNewDueDate("");
     }
   };
 
-  function toggleTodoCompleted(id) {
-    fetch(`http://localhost:3001/${id}`, {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      method: "PUT",
-      body: JSON.stringify({
-        completed: !todos.find((todo) => todo.id === id).completed,
-      }),
-    }).then(() => {
-      const newTodos = [...todos];
-      const modifiedTodoIndex = newTodos.findIndex((todo) => todo.id === id);
-      newTodos[modifiedTodoIndex] = {
-        ...newTodos[modifiedTodoIndex],
-        completed: !newTodos[modifiedTodoIndex].completed,
+  const toggleTodoCompleted = async (id) => {
+    debugger;
+    if (!id.trim()) {
+      return;
+    } else {
+      const data = {
+        completed: true,
       };
-      setTodos(newTodos);
-    });
-  }
+      await todoService
+        .updateTodo(data, id)
+        .then(async () => await fetchTodos())
+        .catch((err) => console.log(err));
+    }
+  };
 
   const deleteTodoHandler = async (id) => {
     await todoService

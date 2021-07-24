@@ -41,7 +41,7 @@ class productService {
         "Content-Type": "application/json",
       },
       method: "PUT",
-      body: JSON.stringify(data),
+      body: JSON.stringify(data, id),
     }).then((response) => response.json());
   };
 
