@@ -756,3 +756,154 @@
 2021-07-24T15:13:42.455Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
 2021-07-24T15:13:42.610Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
 2021-07-24T15:13:42.638Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:16:01.793Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:16:04.228Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:16:05.294Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:16:05.329Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:16:05.482Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:16:05.506Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:18:13.532Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:18:16.653Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:18:17.358Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (status, message, ...) } to have property '_id'
+2021-07-24T15:18:17.708Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:18:17.735Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:18:17.893Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:18:17.920Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:18:44.376Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:18:54.478Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:18:54.533Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:19:04.579Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:19:10.914Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:19:21.024Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:19:21.079Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:19:22.444Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:19:22.932Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (status, message, ...) } to have property 'text'
+2021-07-24T15:19:23.255Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:19:23.279Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:19:23.423Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:19:23.453Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:20:50.536Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:20:52.107Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:20:53.170Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:20:53.214Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:20:53.367Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:20:53.392Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:21:49.839Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:21:52.178Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:21:53.161Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:21:53.195Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:21:53.337Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:21:53.364Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:22:50.555Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:22:52.087Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:22:53.178Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:22:53.215Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:22:53.386Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:22:53.418Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:23:36.472Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:23:46.573Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:23:46.644Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:23:56.703Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:23:58.094Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T15:23:59.566Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:24:06.540Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:24:16.647Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:24:16.699Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:24:26.759Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:24:28.313Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T15:24:29.622Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:24:30.352Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:24:30.366Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:24:30.517Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc2740c40de5429c66aa62
+2021-07-24T15:24:30.532Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:24:54.013Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:24:55.443Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:24:56.421Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (status, message) } to have property 'text'
+2021-07-24T15:25:48.674Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:25:51.030Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:25:51.213Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (data, status) } to be an array
+2021-07-24T15:25:52.041Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:25:52.073Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:25:52.221Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:25:52.260Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:26:30.680Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:26:40.794Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:26:40.848Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:26:42.279Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:26:43.169Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:26:43.208Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:26:43.372Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:26:43.405Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:27:11.166Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:27:21.237Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:27:21.302Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:27:31.369Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:27:41.423Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:27:43.153Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T15:27:44.472Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:27:44.931Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:27:44.943Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:27:45.090Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:27:45.106Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:28:03.986Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:28:05.389Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:28:05.552Z [31merror[39m: 	Uncaught Exception AssertionError: Target cannot be null or undefined.
+2021-07-24T15:28:06.341Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:28:06.356Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:28:06.492Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:28:06.504Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:28:26.938Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:28:37.030Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:28:37.071Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:28:47.116Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:28:49.602Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:28:50.370Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:28:50.406Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:28:50.560Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:28:50.599Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:28:59.970Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:29:18.163Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:29:19.672Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:29:20.350Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (status, message, ...) } to have property 'Success'
+2021-07-24T15:29:20.683Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:29:20.716Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:29:20.891Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:29:20.923Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:29:36.651Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:29:38.110Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:29:38.820Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (status, message, ...) } to have property 'success'
+2021-07-24T15:29:39.151Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:29:39.178Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:29:39.328Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:29:39.353Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:32:20.344Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:32:22.219Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:33:20.217Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:33:30.318Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:33:30.392Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:33:40.437Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:33:41.826Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T15:33:50.483Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:34:07.226Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:34:17.341Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:34:17.404Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:34:18.787Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:34:19.305Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (status, message, ...) } to be an array
+2021-07-24T15:34:19.626Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:34:19.657Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:34:19.798Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:34:19.828Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:35:32.213Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:35:42.308Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-24T15:35:42.357Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:35:43.817Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:35:44.633Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:35:44.669Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:35:44.826Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:35:44.849Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+2021-07-24T15:37:06.771Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T15:37:09.319Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T15:37:10.590Z [31merror[39m: 	[put/:id]Error occured while updating the record
+2021-07-24T15:37:10.630Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 500
+2021-07-24T15:37:10.782Z [31merror[39m: 	[delete/:id] Can not delete the record with id 60fc308fcfe2bf30ec476238
+2021-07-24T15:37:10.809Z [31merror[39m: 	Uncaught Exception AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404

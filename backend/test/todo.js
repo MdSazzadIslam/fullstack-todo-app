@@ -6,7 +6,7 @@ const server = require("../server");
 let should = chai.should();
 
 chai.use(chaiHttp);
-const id = "60fc2740c40de5429c66aa62";
+const id = "60fc308fcfe2bf30ec476238";
 
 /*
  * Test the /GET route
@@ -19,6 +19,8 @@ describe("/GET todos", () => {
       .get("/api/v1/todo")
       .end((err, res) => {
         res.should.have.status(200);
+        res.should.be.json;
+        res.body.should.be.a("array");
         done();
       });
   });
@@ -34,6 +36,8 @@ describe("/GET pending todos", () => {
       .get("/api/v1/todo/pending")
       .end((err, res) => {
         res.should.have.status(200);
+        res.should.be.json;
+        res.body.should.be.a("array");
         done();
       });
   });
@@ -49,6 +53,8 @@ describe("/GET completed todos", () => {
       .get("/api/v1/todo/completed")
       .end((err, res) => {
         res.should.have.status(200);
+        res.should.be.json;
+        res.body.should.be.a("array");
         done();
       });
   });
@@ -70,9 +76,6 @@ describe("/POST todo", () => {
       .end((err, res) => {
         res.should.have.status(201);
         res.body.should.be.a("object");
-        todo.should.have.property("text");
-        todo.should.have.property("dueDate");
-
         done();
       });
   });
@@ -110,6 +113,9 @@ describe("/PUT/:id todo", () => {
       .end((err, res) => {
         res.should.have.status(200);
         res.body.should.be.a("object");
+
+        res.body.should.have.property("text");
+        res.body.should.have.property("dueDate");
         done();
       });
   });
@@ -133,7 +139,7 @@ describe("/DELETE/:id todo", () => {
 /*
  * Test the /DELETE/ALL route
  */
-describe("/DELETE todo", () => {
+/* describe("/DELETE todo", () => {
   it("it should DELETE all todo record", (done) => {
     chai
       .request(server)
@@ -143,4 +149,4 @@ describe("/DELETE todo", () => {
         done();
       });
   });
-});
+}); */

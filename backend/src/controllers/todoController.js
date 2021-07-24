@@ -15,7 +15,7 @@ const getTodos = (req, res) => {
     .limit(Number(limit))
     .exec()
     .then((data) => {
-      res.status(200).json({ data: data, status: "true" });
+      res.status(200).json(data);
     })
     .catch((err) => {
       logger.error(
@@ -44,7 +44,7 @@ const getTodo = (req, res) => {
           .status(404)
           .json({ status: "false", message: `No record found for id =${id} ` });
       } else {
-        res.status(200).json({ status: "true", data: data });
+        res.status(200).json(data);
       }
     })
     .catch((err) => {
@@ -189,10 +189,7 @@ const deleteTodos = (req, res) => {
 const pendingTodos = (req, res) => {
   Todo.find({ completed: false })
     .then((data) => {
-      res.status(200).json({
-        status: "true",
-        data: data,
-      });
+      res.status(200).json(data);
     })
     .catch((err) => {
       res.status(500).json({
@@ -207,10 +204,7 @@ const pendingTodos = (req, res) => {
 const completedTodos = (req, res) => {
   Todo.find({ completed: true })
     .then((data) => {
-      res.status(200).json({
-        status: "true",
-        data: data,
-      });
+      res.status(200).json(data);
     })
     .catch((err) => {
       res.status(500).json({
