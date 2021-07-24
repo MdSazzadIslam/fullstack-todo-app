@@ -7,12 +7,12 @@ const List = ({
   todoContainer,
   todoTextCompleted,
   deleteTodoClass,
-  toggleTodoCompleted,
+  toggleTodoHandler,
   deleteTodoHandler,
   editTodoHandler,
 }) => {
-  const toggleChange = async (id) => {
-    await toggleTodoCompleted(id);
+  const toggleChange = async (id, checked) => {
+    await toggleTodoHandler(id, checked);
   };
 
   const deleteTodo = async (id) => {
@@ -34,7 +34,7 @@ const List = ({
       >
         <Checkbox
           checked={todo.completed}
-          onChange={() => toggleChange(todo._id)}
+          onChange={(e) => toggleChange(todo._id, e.target.checked)}
         ></Checkbox>
         <Box flexGrow={1}>
           <Typography

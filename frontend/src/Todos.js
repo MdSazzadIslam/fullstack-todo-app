@@ -90,13 +90,13 @@ function Todos() {
     }
   };
 
-  const toggleTodoCompleted = async (id) => {
+  const toggleTodoHandler = async (id, checked) => {
     debugger;
     if (!id.trim()) {
       return;
     } else {
       const data = {
-        completed: true,
+        completed: checked,
       };
       await todoService
         .updateTodo(data, id)
@@ -183,7 +183,9 @@ function Todos() {
               todoContainer={classes.todoContainer}
               todoTextCompleted={classes.todoTextCompleted}
               deleteTodoClass={classes.deleteTodo}
-              toggleTodoCompleted={(id) => toggleTodoCompleted(id)}
+              toggleTodoHandler={(id, checked) =>
+                toggleTodoHandler(id, checked)
+              }
               deleteTodoHandler={(id) => deleteTodoHandler(id)}
               editTodoHandler={(id, text, dueDate) =>
                 editTodoHandler(id, text, dueDate)
