@@ -12,7 +12,7 @@ const validateTodo = (req, res, next) => {
     errors.array().forEach((error) => {
       messages.push(error.msg);
     });
-    logger.error(messages);
+    logger.error("Middleware[create/update]", messages);
     return res.status(500).send({ message: messages });
   }
   next();

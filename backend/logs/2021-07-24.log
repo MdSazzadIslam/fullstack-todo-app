@@ -40,3 +40,13 @@
 2021-07-24T01:36:49.884Z [32minfo[39m: 	Successfully connected to database
 2021-07-24T01:36:59.971Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
 2021-07-24T01:37:01.216Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:38:13.696Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:38:15.564Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:42:14.120Z [31merror[39m: 	Text is required
+2021-07-24T01:42:50.162Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:42:51.633Z [31merror[39m: 	Middleware[create/update]
+2021-07-24T01:42:53.472Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:43:03.297Z [31merror[39m: 	Middleware[create/update]
+2021-07-24T01:43:04.618Z [31merror[39m: 	Middleware[create/update]
+2021-07-24T01:43:05.530Z [31merror[39m: 	Middleware[create/update]
+2021-07-24T01:43:10.494Z [31merror[39m: 	Middleware[create/update]
