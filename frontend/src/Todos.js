@@ -12,6 +12,7 @@ import {
 } from "@material-ui/core";
 import todoService from "./services/todoService";
 import List from "./components/List";
+import moment from "moment";
 
 const useStyles = makeStyles({
   addTodoContainer: { padding: 10 },
@@ -43,8 +44,10 @@ function Todos() {
 
   const [todos, setTodos] = useState([]);
   const [newTodoText, setNewTodoText] = useState("");
-  const [newDueDate, setNewDueDate] = useState("");
-
+  const [newDueDate, setNewDueDate] = useState(
+    moment(new Date()).format("YYYY-MM-DD")
+  );
+  const [id, setId] = useState("");
   const fetchTodos = async () => {
     await todoService.getTodos().then((todos) => setTodos(todos));
   };
@@ -55,22 +58,35 @@ function Todos() {
 
   const addTodo = async (event) => {
     event.preventDefault();
-    console.log(newDueDate.length);
-    if (!newTodoText.trim()) {
-      return;
-    } else if (newDueDate.length < 8) {
-      return;
+    if (id) {
+      //if id exist then update  will work otherwise save
+      {
+        const data = {
+          text: newTodoText,
+          dueDate: newDueDate,
+        };
+        await todoService
+          .updateTodo(data, id)
+          .then(async () => await fetchTodos()) //Only want to fetch data when update is successfull
+          .catch((err) => console.log(err));
+        clearFiled();
+      }
     } else {
-      const data = {
-        text: newTodoText,
-        dueDate: newDueDate,
-      };
-      await todoService
-        .createTodo(data)
-        .then(async () => await fetchTodos())
-        .catch((err) => console.log(err));
-      setNewTodoText("");
-      setNewDueDate("");
+      if (!newTodoText.trim()) {
+        return;
+      } else if (newDueDate.length < 8) {
+        return;
+      } else {
+        const data = {
+          text: newTodoText,
+          dueDate: newDueDate,
+        };
+        await todoService
+          .createTodo(data)
+          .then(async () => await fetchTodos())
+          .catch((err) => console.log(err));
+        clearFiled();
+      }
     }
   };
 
@@ -101,10 +117,22 @@ function Todos() {
       });
   };
 
+  const editTodoHandler = (id, text, dueDate) => {
+    setNewDueDate(moment(new Date(dueDate)).format("YYYY-MM-DD"));
+    setNewTodoText(text);
+    setId(id);
+  };
+
   const handleKeyPress = async (event) => {
     if (event.key === "Enter") {
       await addTodo();
     }
+  };
+
+  const clearFiled = () => {
+    setNewTodoText("");
+    setNewDueDate("");
+    setId("");
   };
 
   return (
@@ -142,7 +170,7 @@ function Todos() {
               startIcon={<Icon>add</Icon>}
               onClick={(event) => addTodo(event)}
             >
-              Add
+              {id ? "Update" : "Add"}
             </Button>
           ) : null}
         </Box>
@@ -157,6 +185,9 @@ function Todos() {
               deleteTodoClass={classes.deleteTodo}
               toggleTodoCompleted={(id) => toggleTodoCompleted(id)}
               deleteTodoHandler={(id) => deleteTodoHandler(id)}
+              editTodoHandler={(id, text, dueDate) =>
+                editTodoHandler(id, text, dueDate)
+              }
             />
           </Box>
         </Paper>

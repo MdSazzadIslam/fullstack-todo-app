@@ -8,6 +8,7 @@
     "@testing-library/react": "12.0.0",
     "@testing-library/user-event": "13.1.9",
     "env-cmd": "^10.1.0",
+    "moment": "^2.29.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "4.0.3"
