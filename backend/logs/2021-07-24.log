@@ -1,0 +1,42 @@
+2021-07-24T01:24:12.948Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:24:34.432Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-24T01:24:36.114Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:25:23.658Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:25:24.959Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:26:30.223Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:26:31.691Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:27:38.804Z [31merror[39m: 	Text is required
+2021-07-24T01:28:25.029Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:28:26.968Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:28:43.507Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:28:44.594Z [31merror[39m: 	
+2021-07-24T01:28:44.771Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:28:47.708Z [31merror[39m: 	
+2021-07-24T01:28:48.801Z [31merror[39m: 	
+2021-07-24T01:29:00.390Z [31merror[39m: 	
+2021-07-24T01:29:01.494Z [31merror[39m: 	
+2021-07-24T01:29:09.200Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:29:15.045Z [31merror[39m: 	Text is required
+2021-07-24T01:29:22.333Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:29:23.601Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:29:27.121Z [31merror[39m: 	
+2021-07-24T01:29:28.528Z [31merror[39m: 	
+2021-07-24T01:29:33.341Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:29:34.811Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:31:08.590Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:31:13.752Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:31:44.581Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:31:45.803Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:32:05.603Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:32:06.863Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:33:52.282Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:33:53.931Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:34:39.831Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:34:41.058Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:36:19.043Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:36:21.520Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:36:27.990Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:36:48.638Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:36:49.884Z [32minfo[39m: 	Successfully connected to database
+2021-07-24T01:36:59.971Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-24T01:37:01.216Z [32minfo[39m: 	Successfully connected to database

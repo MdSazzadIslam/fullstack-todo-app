@@ -1,21 +1,23 @@
 "use strict";
 const mongoose = require("mongoose");
-require("dotenv").config();
-const connect = () => {
-  mongoose
-    .connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    })
-    .then(() => {
-      return console.info("connected to database");
-    })
-    .catch((error) => {
-      console.error("Error connecting to database: ", error);
-      return process.exit(1);
-    });
-};
+const logger = require("../helpers/logger");
+module.exports = (db) => {
+  const connect = () => {
+    mongoose
+      .connect(db, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false,
+      })
+      .then(() => {
+        logger.info(`Successfully connected to database`);
+      })
+      .catch((error) => {
+        logger.error("Error connecting to database: ", error);
+      });
+  };
+  connect();
 
-module.exports = connect;
+  mongoose.connection.on("disconnected", connect); // try to connect again to database when when database connection is error
+};
