@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 const logger = require("../helpers/logger");
 module.exports = (db) => {
-  const connect = () => {
+  const connectDB = () => {
     mongoose
       .connect(db, {
         useNewUrlParser: true,
@@ -17,7 +17,7 @@ module.exports = (db) => {
         logger.error("Error connecting to database: ", error);
       });
   };
-  connect();
+  connectDB();
 
-  mongoose.connection.on("disconnected", connect); // try to connect again to database when when database connection is error
+  mongoose.connection.on("disconnected", connectDB); // try to connect again to database when when database connection is error
 };

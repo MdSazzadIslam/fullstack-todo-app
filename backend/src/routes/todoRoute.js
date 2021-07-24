@@ -9,6 +9,8 @@ const {
   updateTodo,
   deleteTodo,
   deleteTodos,
+  pendingTodos,
+  completedTodos,
 } = require("../controllers/todoController");
 const {
   todoValidationRules,
@@ -16,6 +18,8 @@ const {
 } = require("../middlewares/validator");
 
 router.get("/", getTodos);
+router.get("/completed", completedTodos);
+router.get("/pending", pendingTodos);
 router.get("/:id", getTodo);
 router.post("/create", [todoValidationRules(), validateTodo], createTodo);
 router.put("/update/:id", [todoValidationRules(), validateTodo], updateTodo);
