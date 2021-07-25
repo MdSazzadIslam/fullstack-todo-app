@@ -6,6 +6,7 @@ class productService {
   };
 
   static getTodo = async (id) => {
+    console.log(id);
     return await fetch(process.env.REACT_APP_API_URL + "/" + `${id}`).then(
       (response) => response.json()
     );

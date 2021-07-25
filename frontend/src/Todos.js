@@ -9,6 +9,8 @@ import {
   Box,
   TextField,
   CircularProgress,
+  Select,
+  MenuItem,
 } from "@material-ui/core";
 import todoService from "./services/todoService";
 import List from "./components/List";
@@ -48,6 +50,8 @@ function Todos() {
     moment(new Date()).format("YYYY-MM-DD")
   );
   const [id, setId] = useState("");
+  const [searchId, setSearchId] = useState("2"); //default value will be 2[for displaying all the records]
+
   const fetchTodos = async () => {
     await todoService.getTodos().then((todos) => setTodos(todos));
   };
@@ -135,6 +139,18 @@ function Todos() {
     setId("");
   };
 
+  const handleSelectChange = async (e) => {
+    setSearchId(e.target.value);
+
+    if (e.target.value === "2") {
+      await todoService.getTodos().then((todos) => setTodos(todos));
+    } else {
+      await todoService
+        .getTodo(e.target.value)
+        .then((todos) => setTodos(todos));
+    }
+  };
+
   return (
     <Container maxWidth="md">
       <Typography variant="h3" component="h1" gutterBottom>
@@ -175,8 +191,26 @@ function Todos() {
           ) : null}
         </Box>
       </Paper>
+
       {todos.length > 0 ? (
         <Paper className={classes.todosContainer}>
+          <Box display="flex" flexDirection="row">
+            <TextField
+              fullWidth
+              placeholder="to date"
+              type="date"
+              name="newTodoText"
+              autoFocus
+              value={newTodoText}
+              onChange={(event) => setNewTodoText(event.target.value)}
+            />
+            <Select value={searchId} onChange={(e) => handleSelectChange(e)}>
+              <MenuItem value="1">Pending</MenuItem>
+              <MenuItem value="0">Completed</MenuItem>
+              <MenuItem value="2">All</MenuItem>
+            </Select>
+          </Box>
+
           <Box display="flex" flexDirection="column" alignItems="stretch">
             <List
               todos={todos}
