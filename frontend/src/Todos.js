@@ -49,11 +49,15 @@ function Todos() {
   const [newDueDate, setNewDueDate] = useState(
     moment(new Date()).format("YYYY-MM-DD")
   );
+  const [loading, setLoading] = useState(false);
   const [id, setId] = useState("");
-  const [searchId, setSearchId] = useState("2"); //default value will be 2[for displaying all the records]
+  const [searchId, setSearchId] = useState("all");
+  const [dueDate, setDueDate] = useState("");
 
   const fetchTodos = async () => {
+    setLoading(true);
     await todoService.getTodos().then((todos) => setTodos(todos));
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -113,7 +117,6 @@ function Todos() {
     await todoService
       .deleteTodo(id)
       .then(async (res) => {
-        console.log(res);
         await fetchTodos();
       })
       .catch((err) => {
@@ -139,17 +142,33 @@ function Todos() {
     setId("");
   };
 
-  const handleSelectChange = async (e) => {
-    setSearchId(e.target.value);
+  const handleSelectChange = async (event) => {
+    setSearchId(event.target.value);
 
-    if (e.target.value === "2") {
+    if (event.target.value === "all") {
+      setLoading(true);
       await todoService.getTodos().then((todos) => setTodos(todos));
+      setLoading(false);
     } else {
+      setLoading(true);
       await todoService
-        .getTodo(e.target.value)
+        .getTodoByParams(event.target.value)
         .then((todos) => setTodos(todos));
     }
+    setLoading(false);
   };
+
+  const handleDateChange = async (event) => {
+    console.log(event.target.value);
+    setDueDate(event.target.value);
+    setLoading(true);
+    await todoService
+      .getTodoByParams(event.target.value)
+      .then((todos) => setTodos(todos));
+    setLoading(false);
+  };
+
+  console.log(loading);
 
   return (
     <Container maxWidth="md">
@@ -192,22 +211,21 @@ function Todos() {
         </Box>
       </Paper>
 
-      {todos.length > 0 ? (
+      {loading === false ? (
         <Paper className={classes.todosContainer}>
           <Box display="flex" flexDirection="row">
             <TextField
               fullWidth
-              placeholder="to date"
+              placeholder="enter date for searching..."
               type="date"
-              name="newTodoText"
-              autoFocus
-              value={newTodoText}
-              onChange={(event) => setNewTodoText(event.target.value)}
+              name="dueDate"
+              value={dueDate}
+              onChange={(event) => handleDateChange(event)}
             />
             <Select value={searchId} onChange={(e) => handleSelectChange(e)}>
-              <MenuItem value="1">Pending</MenuItem>
-              <MenuItem value="0">Completed</MenuItem>
-              <MenuItem value="2">All</MenuItem>
+              <MenuItem value="false">Pending</MenuItem>
+              <MenuItem value="true">Completed</MenuItem>
+              <MenuItem value="all">All</MenuItem>
             </Select>
           </Box>
 
