@@ -15,7 +15,7 @@ import {
 import todoService from "./services/todoService";
 import List from "./components/List";
 import moment from "moment";
-
+import debounce from "lodash.debounce";
 const useStyles = makeStyles({
   addTodoContainer: { padding: 10 },
   addTodoButton: { marginLeft: 5 },
@@ -53,10 +53,12 @@ function Todos() {
   const [id, setId] = useState("");
   const [searchId, setSearchId] = useState("all");
   const [dueDate, setDueDate] = useState("");
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(20);
 
   const fetchTodos = async () => {
     setLoading(true);
-    await todoService.getTodos().then((todos) => setTodos(todos));
+    await todoService.getTodos(page, limit).then((todos) => setTodos(todos));
     setLoading(false);
   };
 
@@ -167,8 +169,21 @@ function Todos() {
       .then((todos) => setTodos(todos));
     setLoading(false);
   };
-
-  console.log(loading);
+  window.onscroll = debounce(() => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop ===
+      document.documentElement.offsetHeight
+    ) {
+      nextPageHandler();
+    }
+  }, 100);
+  const nextPageHandler = async () => {
+    setPage(page + 1);
+    await todoService
+      .getTodos(page + 1, limit)
+      .then((todo) => setTodos(todos.concat(todo)))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <Container maxWidth="md">

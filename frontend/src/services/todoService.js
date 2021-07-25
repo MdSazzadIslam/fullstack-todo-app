@@ -1,6 +1,13 @@
 class productService {
-  static getTodos = async () => {
-    return await fetch(process.env.REACT_APP_API_URL).then(
+  static getTodos = async (page, limit) => {
+    console.log(page, limit);
+    return await fetch(
+      process.env.REACT_APP_API_URL +
+        "?page=" +
+        `${page}` +
+        "&limit=" +
+        `${limit}` //passing 'limit' and 'page' as query parameters to node.js server
+    ).then(
       (response) => response.json() // Converting received data to JSON
     );
   };
