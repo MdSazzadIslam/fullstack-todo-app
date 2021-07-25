@@ -1,0 +1,95 @@
+2021-07-25T18:18:39.541Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:18:41.348Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:18:45.752Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:18:47.842Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:29:30.910Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:29:48.619Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:29:50.078Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:30:10.639Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:30:12.461Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:33:54.002Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:34:07.718Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:42:20.501Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:42:22.758Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:42:37.804Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:42:59.524Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T18:43:21.119Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T18:43:22.996Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:45:51.085Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:45:52.827Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:46:44.405Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:46:47.332Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:46:48.561Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:47:12.025Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-25T18:48:03.733Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-25T18:53:34.591Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:53:56.756Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T18:53:58.301Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:54:05.270Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-25T18:54:32.013Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:54:33.582Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:55:41.446Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:55:53.880Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:56:24.295Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T18:56:25.628Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T18:59:29.149Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-25T19:00:12.402Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:00:14.139Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:01:09.742Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:01:31.696Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T19:01:38.030Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-25T19:01:43.175Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:03:18.356Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:03:20.766Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:04:56.347Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:04:57.851Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:05:34.819Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:05:59.879Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T19:06:07.375Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:06:13.483Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:14:35.315Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:14:39.338Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:16:01.077Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:16:09.500Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:21:55.256Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-25T19:25:49.187Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:25:51.566Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:26:09.331Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:26:10.615Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:28:47.162Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:29:12.139Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T19:29:22.415Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-25T19:29:42.197Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-25T19:29:43.630Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T19:29:44.837Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:30:54.866Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:30:57.174Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:52:51.632Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:53:07.743Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-25T19:53:13.393Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T19:53:14.657Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T19:58:54.057Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T19:59:17.088Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T19:59:18.356Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:09:24.462Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:09:27.098Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:16:39.851Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:16:41.747Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:17:16.760Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:17:18.002Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:17:20.481Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:17:31.811Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:28:55.450Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:29:08.787Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:29:50.011Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:30:11.575Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-25T20:30:12.926Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:31:59.729Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:32:03.707Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:36:24.539Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:36:38.148Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:37:28.582Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:37:30.133Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:39:28.735Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:39:30.581Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T20:46:32.126Z [31merror[39m: 	[get/todos]Error occured while retriving all the records

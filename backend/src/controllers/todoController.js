@@ -4,14 +4,25 @@ const Todo = require("../models/todoModel");
 
 const getTodos = (req, res) => {
   let limit = req.query.limit;
-  if (typeof req.query.limit !== "undefined") {
+  let page = req.query.limit;
+
+  if (typeof limit !== "undefined") {
     limit = parseInt(req.query.limit);
   } else {
     limit = 20;
   }
 
+  if (typeof page !== "undefined") {
+    page = parseInt(req.query.page);
+  } else {
+    page = 1;
+  }
+
+  let offset = parseInt(req.query.page - 1) * parseInt(req.query.limit); // For page 1, the skip is: (1 - 1) * 20 => 0 * 20 = 0
+
   Todo.find({})
     .sort({ createdAt: "desc" })
+    .skip(Number(offset))
     .limit(Number(limit))
     .exec()
     .then((data) => {
@@ -29,34 +40,56 @@ const getTodos = (req, res) => {
     });
 };
 
-const getTodo = (req, res) => {
-  const { id } = req.params;
-  if (typeof id !== "string") {
-    return res
-      .status(400)
-      .json({ status: "false", message: "invalid 'text' expected string" });
-  }
-  Todo.find({ id })
-    .exec()
-    .then((data) => {
-      if (!data) {
-        res
-          .status(404)
-          .json({ status: "false", message: `No record found for id =${id} ` });
-      } else {
-        res.status(200).json(data);
-      }
-    })
-    .catch((err) => {
-      logger.error(
-        "[get/todo]Error occured while retriving the record",
-        err.message
-      );
-      res.status(500).json({
-        status: "false",
-        message: "Error occured while retriving the record" + err.message,
+const getTodoByParams = (req, res) => {
+  const { searchBy } = req.params;
+
+  if (isNaN(searchBy.charAt(0)) == false) {
+    Todo.find({ dueDate: searchBy })
+      .exec()
+      .then((data) => {
+        if (!data) {
+          res.status(404).json({
+            status: "false",
+            message: `No record found for this paramter =${searchBy} `,
+          });
+        } else {
+          res.status(200).json(data);
+        }
+      })
+      .catch((err) => {
+        logger.error(
+          "[get/todo]Error occured while retriving the record",
+          err.message
+        );
+        res.status(500).json({
+          status: "false",
+          message: "Error occured while retriving the record" + err.message,
+        });
       });
-    });
+  } else {
+    Todo.find({ completed: searchBy })
+      .exec()
+      .then((data) => {
+        if (!data) {
+          res.status(404).json({
+            status: "false",
+            message: `No record found for this paramter =${searchBy} `,
+          });
+        } else {
+          res.status(200).json(data);
+        }
+      })
+      .catch((err) => {
+        logger.error(
+          "[get/todo]Error occured while retriving the record",
+          err.message
+        );
+        res.status(500).json({
+          status: "false",
+          message: "Error occured while retriving the record" + err.message,
+        });
+      });
+  }
 };
 
 const createTodo = (req, res) => {
@@ -219,7 +252,7 @@ const completedTodos = (req, res) => {
 
 module.exports = {
   getTodos,
-  getTodo,
+  getTodoByParams,
   createTodo,
   updateTodo,
   deleteTodo,

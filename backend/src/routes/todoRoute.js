@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 const {
   getTodos,
-  getTodo,
+  getTodoByParams,
   createTodo,
   updateTodo,
   deleteTodo,
@@ -20,7 +20,7 @@ const {
 router.get("/", getTodos);
 router.get("/completed", completedTodos);
 router.get("/pending", pendingTodos);
-router.get("/:id", getTodo);
+router.get("/:searchBy", getTodoByParams);
 router.post("/create", [todoValidationRules(), validateTodo], createTodo);
 router.put("/update/:id", updateTodo);
 router.delete("/delete/:id", deleteTodo);
