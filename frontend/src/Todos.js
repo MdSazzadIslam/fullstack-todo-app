@@ -16,6 +16,7 @@ import todoService from "./services/todoService";
 import List from "./components/List";
 import moment from "moment";
 import debounce from "lodash.debounce";
+import { DragDropContext } from "react-beautiful-dnd";
 const useStyles = makeStyles({
   addTodoContainer: { padding: 10 },
   addTodoButton: { marginLeft: 5 },
@@ -174,15 +175,26 @@ function Todos() {
       window.innerHeight + document.documentElement.scrollTop ===
       document.documentElement.offsetHeight
     ) {
-      nextPageHandler();
+      fetchMoreTodos();
     }
   }, 100);
-  const nextPageHandler = async () => {
+  const fetchMoreTodos = async () => {
     setPage(page + 1);
     await todoService
       .getTodos(page + 1, limit)
       .then((todo) => setTodos(todos.concat(todo)))
       .catch((err) => console.log(err));
+  };
+
+  const dragHandler = (result) => {
+    debugger;
+    if (!result.destination) return;
+
+    const items = Array.from(todos); //here todos is a droppableId
+    const [reorderedItem] = items.splice(result.source.index, 1);
+    items.splice(result.destination.index, 0, reorderedItem);
+    console.log(items);
+    setTodos(items);
   };
 
   return (
@@ -257,6 +269,7 @@ function Todos() {
               editTodoHandler={(id, text, dueDate) =>
                 editTodoHandler(id, text, dueDate)
               }
+              dragHandler={(result) => dragHandler(result)}
             />
           </Box>
         </Paper>

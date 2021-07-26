@@ -1,6 +1,5 @@
 class productService {
   static getTodos = async (page, limit) => {
-    console.log(page, limit);
     return await fetch(
       process.env.REACT_APP_API_URL +
         "?page=" +
