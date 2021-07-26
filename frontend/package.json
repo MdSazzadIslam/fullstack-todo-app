@@ -8,6 +8,8 @@
     "@testing-library/react": "12.0.0",
     "@testing-library/user-event": "13.1.9",
     "env-cmd": "^10.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "lodash.debounce": "^4.0.8",
     "moment": "^2.29.1",
     "react": "17.0.2",

@@ -93,3 +93,15 @@
 2021-07-25T20:39:28.735Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
 2021-07-25T20:39:30.581Z [32minfo[39m: 	Successfully connected to database
 2021-07-25T20:46:32.126Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-25T20:49:26.438Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T20:49:30.096Z [32minfo[39m: 	Successfully connected to database
+2021-07-25T21:54:11.654Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-25T21:54:13.747Z [32minfo[39m: 	Successfully connected to database
+2021-07-26T00:30:33.106Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T00:30:36.322Z [32minfo[39m: 	Successfully connected to database
+2021-07-26T00:33:10.213Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T00:33:12.902Z [32minfo[39m: 	Successfully connected to database
+2021-07-26T00:36:43.053Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T00:36:54.570Z [32minfo[39m: 	Successfully connected to database
+2021-07-26T17:21:36.370Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T17:21:48.007Z [32minfo[39m: 	Successfully connected to database

@@ -21,7 +21,7 @@ const getTodos = (req, res) => {
   let offset = parseInt(req.query.page - 1) * parseInt(req.query.limit); // For page 1, the skip is: (1 - 1) * 20 => 0 * 20 = 0
 
   Todo.find({})
-    .sort({ createdAt: "desc" })
+    .sort({ updatedAt: "desc" })
     .skip(Number(offset))
     .limit(Number(limit))
     .exec()

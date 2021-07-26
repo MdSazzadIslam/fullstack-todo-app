@@ -12,11 +12,11 @@ import {
   Select,
   MenuItem,
 } from "@material-ui/core";
-import todoService from "./services/todoService";
+import TodoService from "./services/todoService";
 import List from "./components/List";
 import moment from "moment";
 import debounce from "lodash.debounce";
-import { DragDropContext } from "react-beautiful-dnd";
+
 const useStyles = makeStyles({
   addTodoContainer: { padding: 10 },
   addTodoButton: { marginLeft: 5 },
@@ -59,7 +59,7 @@ function Todos() {
 
   const fetchTodos = async () => {
     setLoading(true);
-    await todoService.getTodos(page, limit).then((todos) => setTodos(todos));
+    await TodoService.getTodos(page, limit).then((todos) => setTodos(todos));
     setLoading(false);
   };
 
@@ -76,8 +76,7 @@ function Todos() {
           text: newTodoText,
           dueDate: newDueDate,
         };
-        await todoService
-          .updateTodo(data, id)
+        await TodoService.updateTodo(data, id)
           .then(async () => await fetchTodos()) //Only want to fetch data when update is successfull
           .catch((err) => console.log(err));
         clearFiled();
@@ -92,8 +91,7 @@ function Todos() {
           text: newTodoText,
           dueDate: newDueDate,
         };
-        await todoService
-          .createTodo(data)
+        await TodoService.createTodo(data)
           .then(async () => await fetchTodos())
           .catch((err) => console.log(err));
         clearFiled();
@@ -109,16 +107,14 @@ function Todos() {
       const data = {
         completed: checked,
       };
-      await todoService
-        .updateTodo(data, id)
+      await TodoService.updateTodo(data, id)
         .then(async () => await fetchTodos())
         .catch((err) => console.log(err));
     }
   };
 
   const deleteTodoHandler = async (id) => {
-    await todoService
-      .deleteTodo(id)
+    await TodoService.deleteTodo(id)
       .then(async (res) => {
         await fetchTodos();
       })
@@ -150,13 +146,13 @@ function Todos() {
 
     if (event.target.value === "all") {
       setLoading(true);
-      await todoService.getTodos().then((todos) => setTodos(todos));
+      await TodoService.getTodos().then((todos) => setTodos(todos));
       setLoading(false);
     } else {
       setLoading(true);
-      await todoService
-        .getTodoByParams(event.target.value)
-        .then((todos) => setTodos(todos));
+      await TodoService.getTodoByParams(event.target.value).then((todos) =>
+        setTodos(todos)
+      );
     }
     setLoading(false);
   };
@@ -165,9 +161,9 @@ function Todos() {
     console.log(event.target.value);
     setDueDate(event.target.value);
     setLoading(true);
-    await todoService
-      .getTodoByParams(event.target.value)
-      .then((todos) => setTodos(todos));
+    await TodoService.getTodoByParams(event.target.value).then((todos) =>
+      setTodos(todos)
+    );
     setLoading(false);
   };
   window.onscroll = debounce(() => {
@@ -180,8 +176,7 @@ function Todos() {
   }, 100);
   const fetchMoreTodos = async () => {
     setPage(page + 1);
-    await todoService
-      .getTodos(page + 1, limit)
+    await TodoService.getTodos(page + 1, limit)
       .then((todo) => setTodos(todos.concat(todo)))
       .catch((err) => console.log(err));
   };

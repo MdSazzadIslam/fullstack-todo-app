@@ -1,4 +1,4 @@
-class productService {
+class TodoService {
   static getTodos = async (page, limit) => {
     return await fetch(
       process.env.REACT_APP_API_URL +
@@ -12,6 +12,7 @@ class productService {
   };
 
   static getTodoByParams = async (searchBy) => {
+    console.log(searchBy);
     return await fetch(
       process.env.REACT_APP_API_URL + "/" + `${searchBy}`
     ).then((response) => response.json());
@@ -71,4 +72,4 @@ class productService {
     }).then((response) => response.json());
   };
 }
-export default productService;
+export default TodoService;
