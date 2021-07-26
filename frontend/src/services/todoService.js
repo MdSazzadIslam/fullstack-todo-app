@@ -18,18 +18,6 @@ class TodoService {
     ).then((response) => response.json());
   };
 
-  static getPendingTodo = async (id) => {
-    return await fetch(process.env.REACT_APP_API_URL + "/pending ").then(
-      (response) => response.json()
-    );
-  };
-
-  static getCompletedTodo = async () => {
-    return await fetch(process.env.REACT_APP_API_URL + "/completed").then(
-      (response) => response.json()
-    );
-  };
-
   static createTodo = async (data) => {
     return await fetch(process.env.REACT_APP_API_URL + "/create", {
       headers: {
