@@ -1,6 +1,7 @@
 class TodoService {
-  static getTodos = async (page, limit) => {
-    return await fetch(
+  static getTodos = (page, limit) => {
+    debugger;
+    return fetch(
       process.env.REACT_APP_API_URL +
         "?page=" +
         `${page}` +
@@ -11,15 +12,15 @@ class TodoService {
     );
   };
 
-  static getTodoByParams = async (searchBy) => {
+  static getTodoByParams = (searchBy) => {
     console.log(searchBy);
-    return await fetch(
-      process.env.REACT_APP_API_URL + "/" + `${searchBy}`
-    ).then((response) => response.json());
+    return fetch(process.env.REACT_APP_API_URL + "/" + `${searchBy}`).then(
+      (response) => response.json()
+    );
   };
 
-  static createTodo = async (data) => {
-    return await fetch(process.env.REACT_APP_API_URL + "/create", {
+  static createTodo = (data) => {
+    return fetch(process.env.REACT_APP_API_URL + "/create", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -29,8 +30,8 @@ class TodoService {
     }).then((response) => response.json());
   };
 
-  static updateTodo = async (data, id) => {
-    return await fetch(process.env.REACT_APP_API_URL + "/update/" + `${id}`, {
+  static updateTodo = (data, id) => {
+    return fetch(process.env.REACT_APP_API_URL + "/update/" + `${id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -40,8 +41,8 @@ class TodoService {
     }).then((response) => response.json());
   };
 
-  static deleteTodo = async (id) => {
-    return await fetch(process.env.REACT_APP_API_URL + "/delete/" + `${id}`, {
+  static deleteTodo = (id) => {
+    return fetch(process.env.REACT_APP_API_URL + "/delete/" + `${id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -50,8 +51,8 @@ class TodoService {
     }).then((response) => response.json());
   };
 
-  static deleteTodos = async () => {
-    return await fetch(process.env.REACT_APP_API_URL + "/delete", {
+  static deleteTodos = () => {
+    return fetch(process.env.REACT_APP_API_URL + "/delete", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

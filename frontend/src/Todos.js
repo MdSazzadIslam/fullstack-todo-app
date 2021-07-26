@@ -57,9 +57,10 @@ function Todos() {
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(20);
 
-  const fetchTodos = async () => {
+  const fetchTodos = () => {
+    debugger;
     setLoading(true);
-    await TodoService.getTodos(page, limit).then((todos) => setTodos(todos));
+    TodoService.getTodos(page, limit).then((todos) => setTodos(todos));
     setLoading(false);
   };
 
@@ -67,7 +68,7 @@ function Todos() {
     fetchTodos();
   }, [setTodos]);
 
-  const addTodo = async (event) => {
+  const addTodo = (event) => {
     event.preventDefault();
     if (id) {
       //if id exist then update  will work otherwise save
@@ -76,8 +77,8 @@ function Todos() {
           text: newTodoText,
           dueDate: newDueDate,
         };
-        await TodoService.updateTodo(data, id)
-          .then(async () => await fetchTodos()) //Only want to fetch data when update is successfull
+        TodoService.updateTodo(data, id)
+          .then(() => fetchTodos()) //Only want to fetch data when update is successfull
           .catch((err) => console.log(err));
         clearFiled();
       }
@@ -91,15 +92,15 @@ function Todos() {
           text: newTodoText,
           dueDate: newDueDate,
         };
-        await TodoService.createTodo(data)
-          .then(async () => await fetchTodos())
+        TodoService.createTodo(data)
+          .then(() => fetchTodos())
           .catch((err) => console.log(err));
         clearFiled();
       }
     }
   };
 
-  const toggleTodoHandler = async (id, checked) => {
+  const toggleTodoHandler = (id, checked) => {
     debugger;
     if (!id.trim()) {
       return;
@@ -107,16 +108,16 @@ function Todos() {
       const data = {
         completed: checked,
       };
-      await TodoService.updateTodo(data, id)
-        .then(async () => await fetchTodos())
+      TodoService.updateTodo(data, id)
+        .then(() => fetchTodos())
         .catch((err) => console.log(err));
     }
   };
 
-  const deleteTodoHandler = async (id) => {
-    await TodoService.deleteTodo(id)
+  const deleteTodoHandler = (id) => {
+    TodoService.deleteTodo(id)
       .then(async (res) => {
-        await fetchTodos();
+        fetchTodos();
       })
       .catch((err) => {
         console.log(err);
@@ -141,27 +142,27 @@ function Todos() {
     setId("");
   };
 
-  const handleSelectChange = async (event) => {
+  const handleSelectChange = (event) => {
     setSearchId(event.target.value);
 
     if (event.target.value === "all") {
       setLoading(true);
-      await TodoService.getTodos().then((todos) => setTodos(todos));
+      TodoService.getTodos().then((todos) => setTodos(todos));
       setLoading(false);
     } else {
       setLoading(true);
-      await TodoService.getTodoByParams(event.target.value).then((todos) =>
+      TodoService.getTodoByParams(event.target.value).then((todos) =>
         setTodos(todos)
       );
     }
     setLoading(false);
   };
 
-  const handleDateChange = async (event) => {
+  const handleDateChange = (event) => {
     console.log(event.target.value);
     setDueDate(event.target.value);
     setLoading(true);
-    await TodoService.getTodoByParams(event.target.value).then((todos) =>
+    TodoService.getTodoByParams(event.target.value).then((todos) =>
       setTodos(todos)
     );
     setLoading(false);
@@ -174,9 +175,9 @@ function Todos() {
       fetchMoreTodos();
     }
   }, 100);
-  const fetchMoreTodos = async () => {
+  const fetchMoreTodos = () => {
     setPage(page + 1);
-    await TodoService.getTodos(page + 1, limit)
+    TodoService.getTodos(page + 1, limit)
       .then((todo) => setTodos(todos.concat(todo)))
       .catch((err) => console.log(err));
   };
@@ -188,7 +189,6 @@ function Todos() {
     const items = Array.from(todos); //here todos is a droppableId
     const [reorderedItem] = items.splice(result.source.index, 1);
     items.splice(result.destination.index, 0, reorderedItem);
-    console.log(items);
     setTodos(items);
   };
 
