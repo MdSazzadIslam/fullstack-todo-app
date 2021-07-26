@@ -78,7 +78,7 @@ function Todos() {
           dueDate: newDueDate,
         };
         TodoService.updateTodo(data, id)
-          .then(() => fetchTodos()) //Only want to fetch data when update is successfull
+          .then(async () => await fetchTodos()) //Only want to fetch data when update is successfull
           .catch((err) => console.log(err));
         clearFiled();
       }
@@ -93,7 +93,7 @@ function Todos() {
           dueDate: newDueDate,
         };
         TodoService.createTodo(data)
-          .then(() => fetchTodos())
+          .then(async () => await fetchTodos())
           .catch((err) => console.log(err));
         clearFiled();
       }
@@ -109,7 +109,7 @@ function Todos() {
         completed: checked,
       };
       TodoService.updateTodo(data, id)
-        .then(() => fetchTodos())
+        .then(async () => await fetchTodos())
         .catch((err) => console.log(err));
     }
   };
@@ -117,7 +117,7 @@ function Todos() {
   const deleteTodoHandler = (id) => {
     TodoService.deleteTodo(id)
       .then(async (res) => {
-        fetchTodos();
+        await fetchTodos();
       })
       .catch((err) => {
         console.log(err);
@@ -167,12 +167,12 @@ function Todos() {
     );
     setLoading(false);
   };
-  window.onscroll = debounce(() => {
+  window.onscroll = debounce(async () => {
     if (
       window.innerHeight + document.documentElement.scrollTop ===
       document.documentElement.offsetHeight
     ) {
-      fetchMoreTodos();
+      await fetchMoreTodos();
     }
   }, 100);
   const fetchMoreTodos = () => {

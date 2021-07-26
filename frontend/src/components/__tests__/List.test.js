@@ -9,9 +9,6 @@ describe("getTodos", () => {
       limit = 20;
     await TodoService.getTodos(page, limit);
     render(<Todos />);
-    await (() => {
-      expect(screen.getByText("Loading todos...")).toBeInTheDocument();
-    });
   });
 });
 
@@ -29,6 +26,18 @@ describe("getTodoByParams", () => {
   };
   test("should create a new todo", async () => {
     await TodoService.createTodo(data);
+    render(<Todos />);
+  });
+});
+
+describe("updateTodo", () => {
+  const id = "60fc30ff6bae0742900f39a9";
+  const data = {
+    text: "Please keep learning",
+    dueDate: "2021-07-27",
+  };
+  test("should update a  todo", async () => {
+    await TodoService.updateTodo(data, id);
     render(<Todos />);
   });
 });
