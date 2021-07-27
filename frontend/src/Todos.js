@@ -147,7 +147,7 @@ function Todos() {
 
     if (event.target.value === "all") {
       setLoading(true);
-      TodoService.getTodos().then((todos) => setTodos(todos));
+      TodoService.getTodos(page, limit).then((todos) => setTodos(todos));
       setLoading(false);
     } else {
       setLoading(true);
