@@ -3,12 +3,27 @@ require("dotenv").config();
 const app = require("./src/app");
 const connectDB = require("./src/config/db");
 const logger = require("./src/helpers/logger");
+const connectRedis = require("./src/config/redis");
 
 async function main() {
   await connectDB(process.env.MONGO_URI);
+  connectRedis();
+
+  process.on("unhandledRejection", (err) => {
+    logger.error(`Unhandled Rejection ${err}`);
+  });
 
   process.on("uncaughtException", (err) => {
     logger.error(`Uncaught Exception ${err}`);
+    process.exit(1);
+  });
+
+  // catch 404 and forward to error handler
+  app.use((req, res, next) => {
+    const err = new Error("Not Found");
+    err.status = 404;
+    res.send("Route not found");
+    next(err);
   });
 
   app.get("/", (req, res) => {

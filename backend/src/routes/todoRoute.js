@@ -16,11 +16,11 @@ const {
   todoValidationRules,
   validateTodo,
 } = require("../middlewares/validator");
-
-router.get("/", getTodos);
+const { cacheCheck, cacheCommonCheck } = require("../middlewares/cache");
+router.get("/", cacheCheck, getTodos);
 router.get("/completed", completedTodos);
 router.get("/pending", pendingTodos);
-router.get("/:searchBy", getTodoByParams);
+router.get("/:searchBy", cacheCommonCheck, getTodoByParams);
 router.post("/create", [todoValidationRules(), validateTodo], createTodo);
 router.put("/update/:id", updateTodo);
 router.delete("/delete/:id", deleteTodo);

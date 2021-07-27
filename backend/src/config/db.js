@@ -11,10 +11,10 @@ module.exports = (db) => {
         useFindAndModify: false,
       })
       .then(() => {
-        logger.info(`Successfully connected to database`);
+        logger.info("Successfully connected to database");
       })
       .catch((error) => {
-        logger.error("Error connecting to database: ", error);
+        logger.error("Error while connecting to database: ", error);
       });
   };
   connectDB();

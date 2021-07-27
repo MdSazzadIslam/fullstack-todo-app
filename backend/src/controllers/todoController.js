@@ -1,11 +1,19 @@
 "use strict";
 const logger = require("../helpers/logger");
 const Todo = require("../models/todoModel");
+const {
+  generateCacheKey,
+  generateCommonCacheKey,
+} = require("../middlewares/cache");
+const connectRedis = require("../config/redis");
+require("dotenv").config();
+
+//const cache = connectRedis();
 
 const getTodos = (req, res) => {
   let limit = req.query.limit;
   let page = req.query.limit;
-
+  //let age = Math.max(0, req.query.age);
   if (typeof limit !== "undefined") {
     limit = parseInt(req.query.limit);
   } else {
@@ -26,6 +34,13 @@ const getTodos = (req, res) => {
     .limit(Number(limit))
     .exec()
     .then((data) => {
+      const key = generateCacheKey(req.query.page, req.query.limit);
+      connectRedis().setex(
+        key,
+        process.env.REDIS_CACHE_TIMEOUT,
+        JSON.stringify(data)
+      );
+      logger.info(`[getTodos] Response is cached with key: ${key}`);
       res.status(200).json(data);
     })
     .catch((err) => {
@@ -39,7 +54,6 @@ const getTodos = (req, res) => {
       });
     });
 };
-
 const getTodoByParams = (req, res) => {
   const { searchBy } = req.params;
 
@@ -53,6 +67,13 @@ const getTodoByParams = (req, res) => {
             message: `No record found for this paramter =${searchBy} `,
           });
         } else {
+          const key = generateCommonCacheKey(searchBy);
+          connectRedis().setex(
+            key,
+            process.env.REDIS_CACHE_TIMEOUT,
+            JSON.stringify(data)
+          );
+          logger.info(`[getTodoByParams]Response is cached with key: ${key}`);
           res.status(200).json(data);
         }
       })
@@ -76,6 +97,13 @@ const getTodoByParams = (req, res) => {
             message: `No record found for this paramter =${searchBy} `,
           });
         } else {
+          const key = generateCommonCacheKey(searchBy);
+          connectRedis().setex(
+            key,
+            process.env.REDIS_CACHE_TIMEOUT,
+            JSON.stringify(data)
+          );
+          logger.info(`[getTodoByParams]Response is cached with key: ${key}`);
           res.status(200).json(data);
         }
       })
@@ -101,6 +129,8 @@ const createTodo = (req, res) => {
   todo
     .save()
     .then((data) => {
+      connectRedis().flushall(); //deleting all the cachec key
+      logger.info("[createTodo]All cache keys are deleted");
       res.status(201).json({
         status: "true",
         message: "Record saved successfully",
@@ -141,6 +171,7 @@ const updateTodo = (req, res) => {
           message: `Can not update the record with id ${id}`,
         });
       } else {
+        connectRedis().flushall(); //deleting all the cachec key
         res
           .status(200)
           .json({ status: "true", message: "Record updated successfully" });
@@ -179,6 +210,7 @@ const deleteTodo = (req, res) => {
           message: `Can not delete the record with id ${id}`,
         });
       } else {
+        connectRedis().flushall(); //deleting all the cachec key
         res
           .status(200)
           .json({ status: "true", message: "Data deleted successfully" });
@@ -200,6 +232,7 @@ const deleteTodo = (req, res) => {
 const deleteTodos = (req, res) => {
   Todo.deleteMany()
     .then((data) => {
+      connectRedis().flushall(); //deleting all the cachec key
       res.status(200).json({
         status: "true",
         message: `${data.deletedCount} records deleted successfully`,

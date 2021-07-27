@@ -1,0 +1,373 @@
+2021-07-27T18:19:27.875Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:19:27.896Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:19:51.186Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T18:20:12.692Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T18:20:13.948Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:21:42.795Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:21:42.845Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:21:45.077Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:27:49.224Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:27:49.254Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:27:50.971Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:28:22.418Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:28:22.454Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:28:24.272Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:28:28.804Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:28:28.835Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:28:30.498Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:29:01.031Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:29:01.070Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:29:03.692Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:29:19.531Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:29:19.572Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:29:20.912Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:30:31.143Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:30:31.202Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:30:39.125Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:32:11.325Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:32:11.381Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:32:13.026Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:32:14.954Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:32:14.985Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:32:31.359Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:35:45.285Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:35:45.327Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:35:47.236Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:37:02.546Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:37:02.580Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:37:02.582Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:37:04.866Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:37:44.851Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:37:44.879Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:37:44.883Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:37:46.241Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:40:19.240Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:40:19.271Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:40:19.275Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:40:22.152Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:40:32.411Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:40:32.435Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:40:42.442Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:40:42.480Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:41:03.840Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:41:39.181Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:41:39.210Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:41:40.724Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:44:33.565Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:44:33.592Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:44:36.433Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:48:09.196Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:48:09.228Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:48:16.127Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:48:16.155Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:48:38.808Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:48:38.837Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:48:50.124Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:50:30.743Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:50:30.775Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:50:33.255Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:52:57.869Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:52:57.895Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:53:00.536Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:54:08.663Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:54:08.687Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:54:10.516Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:54:19.384Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:54:19.410Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:54:20.696Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:55:08.371Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:55:08.403Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:55:11.474Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:55:11.498Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:55:12.906Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:55:35.372Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:55:35.398Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:55:36.693Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:56:05.278Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:56:05.312Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:56:06.644Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:56:48.346Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:56:48.375Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:56:49.761Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:58:06.340Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:58:06.368Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:58:08.540Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T18:59:49.651Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T18:59:49.679Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T18:59:52.110Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:00:05.346Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:00:05.380Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:00:06.707Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:00:13.711Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-27T19:00:19.705Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-27T19:01:23.760Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:01:23.791Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:01:25.312Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:01:28.445Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-27T19:01:37.827Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:01:37.859Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:01:39.168Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:02:31.569Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:02:31.606Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:02:33.930Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:02:44.225Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:02:44.252Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:02:55.576Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:03:15.217Z [31merror[39m: 	[get/todos]Error occured while retriving all the records
+2021-07-27T19:07:21.859Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:07:21.884Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:07:21.889Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:07:23.689Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:07:58.892Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:07:58.928Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:07:58.932Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:08:00.233Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:08:26.917Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:08:26.948Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:08:26.951Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:08:28.446Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:08:59.847Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:08:59.882Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:08:59.885Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:09:01.188Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:09:07.734Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:09:07.768Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:09:07.772Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:09:09.085Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:09:40.084Z [32minfo[39m: 	Response is cached with key: 1_20
+2021-07-27T19:11:51.565Z [32minfo[39m: 	Response is cached with key: 1_20
+2021-07-27T19:17:25.652Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:17:25.688Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:17:25.692Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:17:38.035Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:17:38.185Z [32minfo[39m: 	Response is cached with key: 1_20
+2021-07-27T19:39:43.056Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:39:43.082Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:39:43.084Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:39:46.427Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:40:24.706Z [32minfo[39m: 	Response is cached with key: 1_20
+2021-07-27T19:53:30.356Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:53:30.385Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:53:30.390Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:53:30.392Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:53:32.798Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:54:46.173Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:54:46.210Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:54:46.213Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:54:46.214Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:54:47.903Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:54:56.552Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:54:56.602Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:54:56.608Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:54:57.911Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:56:09.564Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:56:09.590Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:56:11.560Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:56:50.981Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T19:56:51.014Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:57:22.549Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T19:57:25.315Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T19:58:13.097Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:13.099Z [32minfo[39m: 	Response is not sent from cache with key: 1_20
+2021-07-27T19:58:13.498Z [32minfo[39m: 	Response is cached with key: 1_20
+2021-07-27T19:58:13.511Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:21.839Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:21.842Z [32minfo[39m: 	Response is sent from cache with key: 1_20
+2021-07-27T19:58:55.067Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:55.071Z [32minfo[39m: 	Response is sent from cache with key: 1_20
+2021-07-27T19:58:56.901Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:56.904Z [32minfo[39m: 	Response is not sent from cache with key: 2_20
+2021-07-27T19:58:57.056Z [32minfo[39m: 	Response is cached with key: 2_20
+2021-07-27T19:58:57.067Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:58.572Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:58:58.575Z [32minfo[39m: 	Response is not sent from cache with key: 3_20
+2021-07-27T19:58:58.712Z [32minfo[39m: 	Response is cached with key: 3_20
+2021-07-27T19:58:58.720Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:04.078Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:04.079Z [32minfo[39m: 	Response is not sent from cache with key: 4_20
+2021-07-27T19:59:04.278Z [32minfo[39m: 	Response is cached with key: 4_20
+2021-07-27T19:59:04.285Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:10.283Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:10.285Z [32minfo[39m: 	Response is sent from cache with key: 1_20
+2021-07-27T19:59:12.304Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:12.306Z [32minfo[39m: 	Response is sent from cache with key: 2_20
+2021-07-27T19:59:13.631Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:13.633Z [32minfo[39m: 	Response is sent from cache with key: 3_20
+2021-07-27T19:59:27.990Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T19:59:27.993Z [32minfo[39m: 	Response is sent from cache with key: 4_20
+2021-07-27T20:07:47.438Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:07:47.475Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:07:50.325Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:08:36.258Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:08:36.327Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:08:37.666Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:08:48.446Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:08:48.482Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:08:50.365Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:11:13.634Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:11:13.669Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:11:17.763Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:11:21.607Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:11:21.640Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:11:23.045Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:11:38.410Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:11:38.440Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:11:39.738Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:11:53.023Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:11:53.060Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:11:54.638Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:12:27.308Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:12:27.337Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:12:29.227Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:12:44.809Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:12:44.813Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: undefined_undefined
+2021-07-27T20:12:45.000Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: 2021-07-28
+2021-07-27T20:12:45.010Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:14:13.159Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:14:13.181Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:14:15.588Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:14:27.666Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:14:27.669Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: 2021-07-30_undefined
+2021-07-27T20:14:27.845Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: 2021-07-30
+2021-07-27T20:14:27.861Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:16:46.283Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:16:46.305Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:16:54.641Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:16:54.644Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: 2021-07-28
+2021-07-27T20:17:04.664Z [31merror[39m: 	[get/todo]Error occured while retriving the record
+2021-07-27T20:17:29.153Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T20:17:50.667Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T20:17:51.144Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:17:51.148Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: 1_20
+2021-07-27T20:17:52.419Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:17:52.566Z [32minfo[39m: 	[getTodos] Response is cached with key: 1_20
+2021-07-27T20:17:52.572Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:18:04.564Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:18:04.567Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: 2021-07-30
+2021-07-27T20:18:04.712Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: 2021-07-30
+2021-07-27T20:18:04.717Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:18:30.001Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:18:30.004Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: 2021-07-28
+2021-07-27T20:18:30.144Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: 2021-07-28
+2021-07-27T20:18:30.148Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:01.331Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:01.337Z [32minfo[39m: 	[getTodoByParams]Response is sent from cache with key: 2021-07-30
+2021-07-27T20:19:09.379Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:09.381Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: true
+2021-07-27T20:19:09.525Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: true
+2021-07-27T20:19:09.528Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:15.778Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:15.791Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: false
+2021-07-27T20:19:15.930Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: false
+2021-07-27T20:19:15.943Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:21.401Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:21.404Z [32minfo[39m: 	[getTodoByParams]Response is sent from cache with key: true
+2021-07-27T20:19:28.033Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:19:28.036Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: undefined_undefined
+2021-07-27T20:19:28.333Z [32minfo[39m: 	[getTodos] Response is cached with key: undefined_undefined
+2021-07-27T20:19:28.341Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:18.427Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:18.432Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: 1_20
+2021-07-27T20:21:18.567Z [32minfo[39m: 	[getTodos] Response is cached with key: 1_20
+2021-07-27T20:21:18.572Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:23.170Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:23.173Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: true
+2021-07-27T20:21:23.306Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: true
+2021-07-27T20:21:23.309Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:34.554Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:34.556Z [32minfo[39m: 	[getTodoByParams]Response is not sent from cache with key: false
+2021-07-27T20:21:34.697Z [32minfo[39m: 	[getTodoByParams]Response is cached with key: false
+2021-07-27T20:21:34.707Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:41.458Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:41.460Z [32minfo[39m: 	[getTodoByParams]Response is sent from cache with key: true
+2021-07-27T20:21:48.066Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:48.068Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:21:55.899Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:21:55.901Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: 2_20
+2021-07-27T20:21:56.046Z [32minfo[39m: 	[getTodos] Response is cached with key: 2_20
+2021-07-27T20:21:56.052Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:23:16.986Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:23:17.065Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:23:28.570Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:29:05.468Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:29:05.502Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:29:27.542Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T20:29:49.046Z [31merror[39m: 	Error while connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-27T20:30:00.311Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:30:26.322Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:30:26.324Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: undefined_undefined
+2021-07-27T20:30:26.507Z [32minfo[39m: 	[getTodos] Response is cached with key: undefined_undefined
+2021-07-27T20:30:26.529Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:30:46.954Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:30:46.956Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: 1_20
+2021-07-27T20:30:47.102Z [32minfo[39m: 	[getTodos] Response is cached with key: 1_20
+2021-07-27T20:30:47.107Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:01.396Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:01.398Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:31:16.648Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:16.650Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:31:19.339Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:19.444Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:31:22.234Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:22.236Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:31:52.853Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:52.856Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:31:58.302Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:31:58.305Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:01.361Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:01.364Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:04.255Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:04.257Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:22.718Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:22.721Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:25.217Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:25.220Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:28.462Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:28.464Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:30.960Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:30.962Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:44.391Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:44.393Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:32:46.695Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:32:46.697Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:33:40.775Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:33:40.801Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:33:42.266Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:34:19.413Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:34:19.443Z [31merror[39m: 	Uncaught Exception ReplyError: ERR wrong number of arguments for 'del' command
+2021-07-27T20:36:40.776Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:36:40.802Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:36:42.505Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:37:23.133Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:37:23.140Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:37:51.719Z [31merror[39m: 	[post/todo]Error occured while saving the record
+2021-07-27T20:37:51.727Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:37:51.778Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:37:51.780Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:39:01.160Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:39:01.190Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:39:04.188Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:39:49.625Z [31merror[39m: 	[post/todo]Error occured while saving the record
+2021-07-27T20:39:49.643Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:39:49.698Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:39:49.700Z [32minfo[39m: 	[getTodos]Response is sent from cache with key: 1_20
+2021-07-27T20:40:28.708Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:40:28.747Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:40:31.626Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:41:00.044Z [32minfo[39m: 	[createTodo]All cache keys are deleted
+2021-07-27T20:41:00.054Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:41:00.093Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:41:00.123Z [32minfo[39m: 	[getTodos]Response is not sent from cache with key: 1_20
+2021-07-27T20:41:00.282Z [32minfo[39m: 	[getTodos] Response is cached with key: 1_20
+2021-07-27T20:41:00.295Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:41:20.640Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:41:20.675Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:41:22.011Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:41:40.695Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:41:40.727Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:41:42.080Z [32minfo[39m: 	Successfully connected to database
+2021-07-27T20:41:56.042Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:41:56.077Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:42:15.516Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-27T20:42:15.567Z [32minfo[39m: 	Successfully connected to redis
+2021-07-27T20:42:16.869Z [32minfo[39m: 	Successfully connected to database
