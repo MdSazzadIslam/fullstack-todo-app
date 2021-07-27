@@ -11,3 +11,4 @@ This applications consists of two parts:
 
 ![F](https://user-images.githubusercontent.com/63356649/127074968-f05f3470-bdd9-48d8-a56a-9b0e0ffca74e.JPG)
 
+Don't forget to give this repo a ⭐ if you like and want to appreciate my efforts
