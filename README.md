@@ -5,16 +5,9 @@ This web application is a simple application to manage a list of things to do.
 
 This applications consists of two parts:
   1. Frontend: Single Page Application built with: React and Material.
-  2. Backend: HTTP REST API built with Node.js, Express and MongoDB.
+  2. Backend: REST API built with Node.js, Express and MongoDB.
 
-## How to run
+## Features
 
-to start the application use docker compose:
+![F](https://user-images.githubusercontent.com/63356649/127074968-f05f3470-bdd9-48d8-a56a-9b0e0ffca74e.JPG)
 
-`docker-compose up --build`
-
-once the app is running you can open:
-
-http://localhost:3000
-
-on your browser.
