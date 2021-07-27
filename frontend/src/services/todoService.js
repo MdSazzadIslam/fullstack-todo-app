@@ -1,6 +1,5 @@
 class TodoService {
   static getTodos = (page, limit) => {
-    debugger;
     return fetch(
       process.env.REACT_APP_API_URL +
         "?page=" +
@@ -13,7 +12,6 @@ class TodoService {
   };
 
   static getTodoByParams = (searchBy) => {
-    console.log(searchBy);
     return fetch(process.env.REACT_APP_API_URL + "/" + `${searchBy}`).then(
       (response) => response.json()
     );
