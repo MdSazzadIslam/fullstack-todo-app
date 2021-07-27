@@ -1,3 +1,10 @@
 2021-07-26T21:58:49.390Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
 2021-07-26T21:58:50.929Z [32minfo[39m: 	Successfully connected to database
 2021-07-26T22:06:20.184Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T22:25:09.225Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T22:25:32.123Z [31merror[39m: 	Error connecting to database:  connect ETIMEDOUT 65.0.246.41:27017
+2021-07-26T22:25:33.304Z [32minfo[39m: 	Successfully connected to database
+2021-07-26T23:20:19.184Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T23:20:30.901Z [32minfo[39m: 	Successfully connected to database
+2021-07-26T23:30:42.822Z [32minfo[39m: 	⚡️[server]:  API is running at port :3001  
+2021-07-26T23:30:45.149Z [32minfo[39m: 	Successfully connected to database

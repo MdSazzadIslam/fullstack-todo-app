@@ -135,18 +135,3 @@ describe("/DELETE/:id todo", () => {
       });
   });
 });
-
-/*
- * Test the /DELETE/ALL route
- */
-/* describe("/DELETE todo", () => {
-  it("it should DELETE all todo record", (done) => {
-    chai
-      .request(server)
-      .delete(`/api/v1/todo/delete`)
-      .end((err, res) => {
-        res.should.have.status(200);
-        done();
-      });
-  });
-}); */
