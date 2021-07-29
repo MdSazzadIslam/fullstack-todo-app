@@ -1,6 +1,8 @@
 # To Do
 This web application is a simple application to manage a list of things to do.
 
+Don't forget to give this repo a ⭐ if you like and want to appreciate my efforts
+
 ## Infrastructure
 
 This applications consists of two parts:
